@@ -1,0 +1,275 @@
+label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #af8f52; }
+
+* {
+  font-family: 'Ubuntu Mono', monospace; }
+  * section:nth-child(3) {
+    background-color: #b5b5b5; }
+  * section:nth-child(3) {
+    background-color: #b5b5b5; }
+
+html, body {
+  margin: 0px;
+  padding: 0px; }
+
+header {
+  height: 500px;
+  position: relative;
+  color: white;
+  background-color: #b5b5b5;
+  background-image: url(http://www.kcra.com/image/view/-/26550802/medRes/2/-/maxh/460/maxw/620/-/s8t7d6z/-/13-GoldenGateBridge-wiki-Christian-Mehlf-hrer-jpg.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
+  header .navbar {
+    width: 100%;
+    display: inline-block; }
+    header .navbar .nav-logo {
+      padding-top: 10px;
+      padding-left: 10px;
+      float: left; }
+    header .navbar .navlink {
+      padding-top: 25px;
+      padding-left: 10px;
+      float: right;
+      display: inline-block;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 700;
+      font-size: 16px;
+      margin-right: 10px; }
+    @media screen and (max-width: 570px) {
+      header .navbar .nav-logo {
+        float: none;
+        text-align: center; }
+      header .navbar .navlink {
+        float: none;
+        text-align: center;
+        max-width: 570px;
+        margin: 0 auto; } }
+  @media screen and (max-width: 570px) {
+    header {
+      text-align: center; } }
+  header .hero-title {
+    text-align: center;
+    margin-right: 25%;
+    margin-left: 25%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 5px solid white; }
+  header .kicker {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 50px; }
+
+.about-section {
+  width: 100%; }
+  .about-section .section-header {
+    color: #e1c184;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    padding-top: 25px; }
+  .about-section .container {
+    width: 100%;
+    display: flex; }
+    .about-section .container .about-image {
+      width: 100%; }
+      .about-section .container .about-image .body-image {
+        margin-left: 80px; }
+    @media screen and (max-width: 570px) {
+      .about-section .container .body-image {
+        margin: 0 auto; } }
+    .about-section .container .about-text {
+      padding-top: 1%; }
+      @media screen and (max-width: 570px) {
+        .about-section .container .about-text h2 {
+          text-align: center; } }
+      .about-section .container .about-text .text {
+        font-size: 24px;
+        padding-right: 15.625%; }
+      @media screen and (max-width: 720px) {
+        .about-section .container .about-text .text {
+          padding: 0;
+          padding-top: 5%; } }
+      @media screen and (max-width: 570px) {
+        .about-section .container .about-text .text {
+          padding-right: 25px;
+          padding-left: 25px;
+          text-align: center; } }
+  @media screen and (max-width: 570px) {
+    .about-section .container {
+      display: block; } }
+
+.submit-section .section-header {
+  color: #e1c184;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  padding-top: 75px; }
+.submit-section .submit-file {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .submit-section .submit-file .area {
+    margin-top: 25px;
+    outline: none;
+    border: 5px solid #e1c184;
+    font-size: 14px;
+    resize: none;
+    width: 75%;
+    height: 200px;
+    padding: 5px; }
+    .submit-section .submit-file .area:focus {
+      transition: border 1s;
+      border: 5px solid #9f7008; }
+  .submit-section .submit-file .file {
+    padding-top: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 18px;
+    padding-bottom: 50px; }
+  @media screen and (max-width: 1024px) {
+    .submit-section .submit-file .file {
+      padding: none;
+      display: none;
+      margin: none; }
+    .submit-section .submit-file .input-file-label {
+      padding: none;
+      margin: none;
+      display: none; } }
+  .submit-section .submit-file .speed {
+    margin-top: 15px;
+    font-size: 18px;
+    margin-bottom: 75px;
+    background: transparent url("../../Images/Arrow.png") right center no-repeat;
+    background-size: contain;
+    font-weight: 700;
+    max-width: 600px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    border: none;
+    border-bottom: 5px solid #9f7008;
+    padding: 10px; }
+    .submit-section .submit-file .speed:focus {
+      outline: none; }
+    .submit-section .submit-file .speed:hover {
+      cursor: pointer; }
+  @media screen and (max-width: 1024px) {
+    .submit-section .submit-file {
+      padding-bottom: none; } }
+  .submit-section .submit-file .submit {
+    font-size: 24px;
+    -webkit-border-radius: 0;
+    -webkit-appearance: none;
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+    border-bottom: 5px solid #9f7008;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px; }
+    .submit-section .submit-file .submit:hover {
+      transition: border 0.1s;
+      cursor: pointer;
+      color: #9f7008;
+      border: 5px solid #9f7008; }
+@media screen and (max-width: 570px) {
+  .submit-section {
+    padding-bottom: none; } }
+
+.results {
+  padding-bottom: 50px; }
+  .results .section-header {
+    color: #e1c184;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    padding-top: 25px; }
+  .results .canvas-container {
+    float: right;
+    text-align: center;
+    margin-right: 5%; }
+    .results .canvas-container h3 {
+      text-align: center; }
+  .results .results-container {
+    border-right: 2px solid rgba(0, 0, 0, 0.66);
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding-bottom: 50px;
+    height: 500px; }
+    .results .results-container div .sub-header {
+      color: #9f7008; }
+    .results .results-container .speed {
+      margin-bottom: 25px; }
+    .results .results-container .original-text {
+      width: 75%;
+      margin: 0 auto;
+      height: 200px;
+      overflow: scroll;
+      overflow-x: hidden;
+      border: 2px solid #9f7008; }
+      .results .results-container .original-text .ori-text {
+        padding: 10px; }
+  @media screen and (max-width: 993px) {
+    .results .results-container {
+      float: none;
+      width: 100%;
+      border: none; }
+    .results .canvas-container {
+      float: none;
+      width: 100%;
+      margin: none; }
+      .results .canvas-container canvas {
+        width: 100%;
+        overflow: hidden; } }
+  @media screen and (min-width: 500px) {
+    .results .canvas-container canvas {
+      width: 440px; } }
+
+footer {
+  margin-top: 525px;
+  background-image: url(http://www.kcra.com/image/view/-/26550802/medRes/2/-/maxh/460/maxw/620/-/s8t7d6z/-/13-GoldenGateBridge-wiki-Christian-Mehlf-hrer-jpg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100px; }
+  footer .navbar {
+    width: 100%;
+    display: inline-block; }
+    footer .navbar .nav-logo {
+      padding-top: 10px;
+      padding-left: 10px;
+      float: left; }
+    footer .navbar .navlink {
+      padding-top: 25px;
+      padding-left: 10px;
+      display: inline-block;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 700;
+      font-size: 16px;
+      margin-right: 10px; }
+
+@media screen and (max-width: 993px) {
+  footer {
+    margin-top: 25px; } }
+
+/*# sourceMappingURL=main.css.map */
