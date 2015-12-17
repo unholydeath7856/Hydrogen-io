@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ERROR);
 $trueText = "";
 $name = "";
 $length = 0;
@@ -352,7 +353,7 @@ function rtf_isPlainText($s) {
         <h3>Text Speedometer</h3>
         <canvas id="tutorial" width="440" height="220">Canvas not available.</canvas>
         <p>
-          Ths speedomter shows the speed of your text loading onto the page
+          This speedomter shows the speed of your text loading onto the page
         </p>
       </div>
     </section>

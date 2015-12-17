@@ -4,7 +4,7 @@ function draw(iSpeed) {
   if (canvas != null && canvas.getContext) {
     var options = buildOptionsAsJSON(canvas, iSpeed);
 
-    //clearCanvas(options);
+    clearCanvas(options);
 
     drawMetallicArc(options);
 
@@ -331,4 +331,9 @@ function convertSpeedToAngle(options) {
     }
 
 	return iSpeedAsAngle;
+}
+
+function clearCanvas(options) {
+	options.ctx.clearRect(0, 0, 800, 600);
+	applyDefaultContextSettings(options);
 }
