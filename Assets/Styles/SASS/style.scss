@@ -1,0 +1,383 @@
+$gray-bg:#b5b5b5;
+$dark-accent:#9f7008;
+$accent-color:#e1c184;
+$nav-text:rgba(255, 255, 255, 0.8);
+
+@mixin border-radius ($radius: 20px){
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-rdius: $radius
+}
+
+@mixin section-color ($color:#b5b5b5) {
+  $list: (1,2,3);
+  @each $section in $list {
+    @if ($section % 2 != 0) {
+      section:nth-child(3) {
+        background-color: $color;
+      }
+    }
+  }
+}
+
+label {
+  font-size: 16px;
+  font-weight: 700;
+  color:$accent-color - 50;
+}
+
+* {
+  font-family: 'Ubuntu Mono', monospace;
+  @include section-color;
+}
+
+html,body {
+  margin:0px;
+  padding: 0px;
+}
+
+header {
+  height: 500px;
+  position: relative;
+  color:white;
+  background-color: $gray-bg;
+  background-image: url(http://www.kcra.com/image/view/-/26550802/medRes/2/-/maxh/460/maxw/620/-/s8t7d6z/-/13-GoldenGateBridge-wiki-Christian-Mehlf-hrer-jpg.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  .navbar {
+    width: 100%;
+    display: inline-block;
+
+    .nav-logo {
+      padding-top: 10px;
+      padding-left: 10px;
+      float:left;
+    }
+
+    .navlink {
+      padding-top:25px;
+      padding-left: 10px;
+      float: right;
+      display: inline-block;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $nav-text;
+      font-weight: 700;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+    @media screen and (max-width:570px) {
+      .nav-logo {
+        float: none;
+        text-align: center;
+      }
+      .navlink {
+        float:none;
+        text-align: center;
+        max-width: 570px;
+        margin: 0 auto;
+      }
+    }
+  }
+  @media screen and (max-width:570px) {
+    text-align: center;
+  }
+
+  .hero-title {
+    text-align: center;
+    margin-right: 25%;
+    margin-left: 25%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 5px solid white;
+  }
+
+  .kicker {
+    text-align: center;
+    color: $nav-text;
+    font-weight: 700;
+    font-size:18px;
+    padding-bottom: 50px;
+  }
+}
+
+.about-section {
+  width: 100%;
+  .section-header {
+    color: $accent-color;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    padding-top:25px;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+
+    .about-image {
+      width: 100%;
+      .body-image {
+        margin-left: 80px;
+      }
+    }
+    @media screen and (max-width:570px) {
+      .body-image {
+        margin: 0 auto;
+      }
+    }
+
+    .about-text {
+      padding-top: 1%;
+
+      @media screen and (max-width: 570px) {
+        h2 {
+          text-align: center;
+        }
+      }
+
+      .text {
+        font-size: 24px;
+        padding-right:15.625%;
+      }
+
+      @media screen and (max-width:720px) {
+        .text {
+          padding: 0;
+          padding-top:5%;
+        }
+      }
+      @media screen and (max-width:570px) {
+          .text {
+            padding-right: 25px;
+            padding-left:25px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  @media screen and (max-width:570px) {
+    .container{
+      display: block;
+    }
+  }
+}
+
+.submit-section {
+  .section-header {
+    color: $accent-color;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    padding-top:75px;
+  }
+
+  .submit-file {
+    font-size: 24px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .area {
+      margin-top:25px;
+      outline: none;
+      border: 5px solid $accent-color;
+      font-size: 14px;
+      resize: none;
+      width: 75%;
+      height: 200px;
+      padding: 5px;
+
+      &:focus {
+        transition: border 1s;
+        border: 5px solid $dark-accent;
+      }
+    }
+
+    .file {
+      padding-top:15px;
+      -webkit-appearance: none;
+      -moz-appearance:none;
+      appearance:none;
+      font-size: 18px;
+      padding-bottom: 50px;
+    }
+    @media screen and (max-width:1024px) {
+      .file {
+        padding: none;
+        display: none;
+        margin: none;
+      }
+      .input-file-label {
+        padding:none;
+        margin: none;
+        display: none;
+      }
+    }
+
+    .speed {
+      margin-top:15px;
+      font-size: 18px;
+      margin-bottom: 75px;
+      background: transparent url("../../Images/Arrow.png") right center no-repeat;
+      background-size: contain;
+    	font-weight: 700;
+    	max-width: 600px;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -webkit-appearance: none;
+      -moz-appearance:none;
+      appearance:none;
+      border-radius: 0;
+      border: none;
+      border-bottom: 5px solid $dark-accent;
+      padding: 10px;
+
+      &:focus {
+        outline:none;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    @media screen and (max-width:1024px) {
+      padding-bottom: none;
+    }
+
+    .submit {
+    	font-size: 24px;
+      -webkit-border-radius: 0;
+      -webkit-appearance: none;
+      border-radius: 0;
+      border: none;
+      background-color: transparent;
+      border-bottom: 5px solid $dark-accent;
+      padding-top:5px;
+      padding-bottom: 5px;
+      padding-left:15px;
+      padding-right: 15px;
+      margin-top: 15px;
+
+      &:hover {
+        transition: border 0.1s;
+        cursor: pointer;
+        color: $dark-accent;
+        border: 5px solid $dark-accent;
+      }
+    }
+  }
+  @media screen and (max-width:570px) {
+    padding-bottom: none;
+  }
+}
+
+.results {
+  padding-bottom: 50px;
+  .section-header {
+    color: $accent-color;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    padding-top:25px;
+  }
+  .canvas-container {
+    float:right;
+    text-align: center;
+    margin-right: 5%;
+    h3 {
+      text-align: center;
+    }
+  }
+  .results-container {
+    border-right: 2px solid rgba(#000000, 0.66);
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding-bottom: 50px;
+    height: 500px;
+    div {
+      .sub-header {
+        color:$dark-accent;
+      }
+    }
+
+    .speed {
+      margin-bottom: 25px;
+    }
+
+    .original-text {
+      width: 75%;
+      margin: 0 auto;
+      height: 200px;
+      overflow: scroll;
+      overflow-x: hidden;
+      border: 2px solid $dark-accent;
+      .ori-text {
+        padding: 10px;
+      }
+    }
+  }
+  @media screen and (max-width:993px) {
+    .results-container {
+      float:none;
+      width: 100%;
+      border: none;
+    }
+    .canvas-container {
+      float: none;
+      width: 100%;
+      margin: none;
+      canvas {
+        width: 100%;
+        overflow: hidden
+      }
+    }
+  }
+  @media screen and (min-width:500px) {
+    .canvas-container {
+      canvas {
+        width: 440px;
+      }
+    }
+  }
+}
+footer {
+  margin-top:525px;
+  background-image: url(http://www.kcra.com/image/view/-/26550802/medRes/2/-/maxh/460/maxw/620/-/s8t7d6z/-/13-GoldenGateBridge-wiki-Christian-Mehlf-hrer-jpg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100px;
+  .navbar {
+    width: 100%;
+    display: inline-block;
+
+    .nav-logo {
+      padding-top: 10px;
+      padding-left: 10px;
+      float:left;
+    }
+
+    .navlink {
+      padding-top:25px;
+      padding-left: 10px;
+      display: inline-block;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $nav-text;
+      font-weight: 700;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+  }
+}
+@media screen and (max-width:993px) {
+  footer {
+    margin-top:25px;
+  }
+}
